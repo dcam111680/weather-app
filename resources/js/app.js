@@ -9,6 +9,12 @@ require('./bootstrap');
 window.Vue = require('vue').default;
 
 import Vue from 'vue';
+import axios from 'axios'
+import moment from 'moment'
+import VueAxios from 'vue-axios'
+
+Vue.prototype.moment = moment
+Vue.use(VueAxios, axios)
 /**
  * The following block of code may be used to automatically register your
  * Vue components. It will recursively scan this directory for the Vue

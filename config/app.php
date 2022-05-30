@@ -14,6 +14,8 @@ return [
     */
 
     'name' => env('APP_NAME', 'Laravel'),
+    'open_weather_key' => env('OPEN_WEATHER_API_KEY'),
+    'geoapify_key' => env('GEOAPIFY_API_KEY'),
 
     /*
     |--------------------------------------------------------------------------

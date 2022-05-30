@@ -20,13 +20,45 @@
             body {
                 font-family: 'Nunito', sans-serif;
             }
+
+            html {
+                -webkit-text-size-adjust: none;
+                -webkit-font-smoothing: subpixel-antialiased;
+                backface-visibility: hidden;
+                -webkit-backface-visibility: hidden;
+                -moz-backface-visibility: hidden;
+                -ms-backface-visibility: hidden;
+                -webkit-transform-style: preserve-3d;
+                font-family: 'Calibri', sans-serif;
+            }
+
+            *,
+            *:before,
+            *:after {
+                user-select: none;
+                box-sizing: border-box;
+                margin: 0;
+                word-break: break-word !important;
+                -webkit-user-drag: none;
+            }
+
+            body {
+                position: relative;
+                overflow-x: hidden;
+                font-size: 16px;
+                background-color: #faeafd;
+            }
+
+            img,
+            svg {
+                vertical-align: middle;
+            }
         </style>
     </head>
     <body>
         <div id="app">
             <main>
-                <h1>Weather App</h1>
-                <router-view></router-view>   
+                <router-view></router-view>      
             </main>
         </div>
     </body>

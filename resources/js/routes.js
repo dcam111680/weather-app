@@ -1,6 +1,7 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
-import home from './routes/home';
+import home from './routes/Home';
+import city from './routes/City';
 
 Vue.use(VueRouter);
 export default new VueRouter({
@@ -8,5 +9,6 @@ export default new VueRouter({
     scrollBehavior: (to, from, savedPosition) => ({ y: 0 }), 
     routes: [
         ...home,
+        ...city,
     ],
 });
